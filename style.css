@@ -1,0 +1,92 @@
+/*----COLORS----
+$color1: rgba(58, 79, 65, 1); 3A4F41 RIFLE GREEN
+$color2: rgba(13, 19, 33, 1); 0D1321 EERIE BLACK
+$color3: rgba(191, 192, 192, 1); #BFC0C0 SILVER
+$color4: rgba(247, 235, 232, 1); F7EBE8 LINEN
+$color5: rgba(0, 0, 0, 1); 000000 BLACK
+
+----TYPO----
+font-family: 'EB Garamond', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*----GENERAL----*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+
+/*-----TYPO-----*/
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500i|Roboto:300');
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'EB Garamond', serif;
+	font-style: italic;
+}
+
+
+/*-----HEADER----*/
+
+#showcase {
+	background: linear-gradient(rgb(0,0,0, 0.2),rgba(0,0,0, 0.2)), url('img/cover.jpeg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #F1F2F0;
+	padding-top: 60px;
+}
+
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+	text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#showcase h1 {
+	font-size: 3rem;
+	line-height: 2.4rem;
+
+}
+
+#showcase hr {
+	border: .8px solid #F1F2F0;
+	width: 120px;
+	margin-top: 0;
+	margin-bottom: 0; 
+}
