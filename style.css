@@ -8,9 +8,15 @@ $color5: rgba(0, 0, 0, 1); 000000 BLACK
 ----TYPO----
 font-family: 'EB Garamond', serif;
 font-family: 'Roboto', sans-serif;
+font-family: 'Special Elite', cursive;
+
+Roboto:400
 */
 
+
 /*----GENERAL----*/
+
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC|Open+Sans+Condensed:300');
 
 html {
 	box-sizing: border-box;
@@ -22,7 +28,6 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 
 }
@@ -36,57 +41,85 @@ body {
 
 /*-----TYPO-----*/
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500i|Roboto:300');
+
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Marcellus SC', serif;
 	text-transform: uppercase;
 }
 
 p {
-	font-family: 'EB Garamond', serif;
-	font-style: italic;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 1px;
 }
 
 
 /*-----HEADER----*/
 
 #showcase {
-	background: linear-gradient(rgb(0,0,0, 0.2),rgba(0,0,0, 0.2)), url('img/cover.jpeg');
+	background: linear-gradient(rgb(0,0,0, 0.2),rgba(0,0,0, 0.3)), url('img/beach.jpeg');
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
-	color: #F1F2F0;
-	padding-top: 60px;
+	color: #FBFBFB;
 }
+
+
+#showcase {
+  position: relative;
+}
+
+#showcase .child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-----NAV----*/
 
 nav {
     text-align: center;
-    background: white;
+    background-color: rgba(15, 15, 15, .7);
     position: fixed;
-    top: 0;
     width: 100%;
+    box-shadow: 0 0 10px black;
 }
 
 nav a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 25px 25px;
 	text-decoration: none;
     text-transform: uppercase;
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav .title {
+	font-family: 'Marcellus SC', serif;
+	font-weight: bold;
+	letter-spacing: 3px;
 }
 
 #showcase h1 {
-	font-size: 3rem;
-	line-height: 2.4rem;
-
+	font-size: 5rem;
+	line-height: 4.4rem;
+	margin-bottom: 20px;
+	max-height: 40%;
+	letter-spacing: 10px;
 }
 
 #showcase hr {
-	border: .8px solid #F1F2F0;
-	width: 120px;
+	border: .8px solid #FBFBFB;
+	width: 180px;
 	margin-top: 0;
 	margin-bottom: 0; 
+}
+
+#showcase p {
+	margin-top: 8px;
+	font-size: 1.5rem;
+	letter-spacing: 5px;
 }
