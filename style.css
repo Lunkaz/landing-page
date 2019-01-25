@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 1px;
+	font-size: 1.2rem;
 }
 
 
@@ -75,6 +76,27 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#showcase h1 {
+	font-size: 5rem;
+	line-height: 4.4rem;
+	margin-bottom: 20px;
+	max-height: 40%;
+	letter-spacing: 10px;
+}
+
+#showcase hr {
+	border: .8px solid #FBFBFB;
+	width: 180px;
+	margin-top: 0;
+	margin-bottom: 0; 
+}
+
+#showcase p {
+	margin-top: 8px;
+	font-size: 1.5rem;
+	letter-spacing: 5px;
 }
 
 /*-----NAV----*/
@@ -103,23 +125,36 @@ nav .title {
 	letter-spacing: 3px;
 }
 
-#showcase h1 {
-	font-size: 5rem;
-	line-height: 4.4rem;
-	margin-bottom: 20px;
-	max-height: 40%;
-	letter-spacing: 10px;
+/*----ABOUT----*/
+
+#slogan {
+	background: linear-gradient(rgba(15,15,15,.2),rgba(15,15,15,.3)), url('img/star.jpeg') fixed;
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #FBFBFB;
 }
 
-#showcase hr {
-	border: .8px solid #FBFBFB;
-	width: 180px;
-	margin-top: 0;
-	margin-bottom: 0; 
+#slogan h2 {
+	padding-top: 18vh;
 }
 
-#showcase p {
-	margin-top: 8px;
-	font-size: 1.5rem;
-	letter-spacing: 5px;
+/*----FACTS---*/
+
+#facts {
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 50px;
+}
+
+#facts h5 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+#facts .icon-number {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
 }
