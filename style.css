@@ -34,10 +34,13 @@ body {
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 60px 50px;
+    padding: 80px 50px;
     overflow: auto;
 }
 
+h2 {
+	text-align: center;
+}
 
 /*-----TYPO-----*/
 
@@ -127,13 +130,13 @@ nav .title {
 
 /*----ABOUT----*/
 
-#about h2 {
-	text-align: center;
-	margin-bottom: 
-}
 
 #about p {
-	margin: 30px 0px 90px 0px;
+	margin: 60px 0px 100px 0px;
+}
+
+#about {
+	padding-bottom: 40px;
 }
 
 /*----FACTS---*/
@@ -142,11 +145,13 @@ nav .title {
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 50px 70px 50px;
+	flex-direction: row-reverse;
 }
 
 #facts h5 {
 	font-size: 1rem;
 	margin: 0;
+	padding: 8px;
 }
 
 #facts .icon-number {
@@ -155,22 +160,113 @@ nav .title {
 	flex-direction: row-reverse;
 }
 
+#facts hr {
+	border: .8px solid black;
+	width: 80px;
+	margin-top: 0;
+	margin-bottom: 0; 
+}
+
 /*----SLOGAN----*/
 
 #slogan {
 	background: linear-gradient(rgba(15,15,15,.2),rgba(15,15,15,.3)), url('img/star.jpeg') fixed;
-	height: 100vh;
+	height: 70vh;
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	color: #FBFBFB;
+	margin-bottom: 80px;
 }
 
 #slogan h2 {
-	padding-top: 40vh;
+	padding-top: 29vh;
 	font-size: 3rem;
 	line-height: 3.3rem;
 	margin-bottom: 20px;
 	letter-spacing: 6px;
 }
 
+
+/*----PACKAGE----*/
+
+#packages {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-top: 30px;
+}
+
+.packages {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+
+#packages h3, p {
+	text-align: center;
+
+}
+
+
+/*----GUIES----*/
+
+#guies {
+	padding-top: 0;
+}
+
+
+
+@media (max-width: 600px) { 
+
+	nav a {
+    display: inline-block;
+    padding: 25px 15px;
+	}
+
+	#showcase h1 {
+	font-size: 3.5rem;
+	line-height: 3.3rem;
+	margin-bottom: 8px;
+	letter-spacing: 8px;
+	}
+
+	#showcase p {
+		font-size: 1.4rem;
+		letter-spacing: 5px;
+	}
+
+	#slogan h2 {
+	padding-top: 29vh;
+	font-size: 2rem;
+	line-height: 2.3rem;
+	margin-bottom: 20px;
+	letter-spacing: 4px;
+	}
+
+	#facts {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.facts .icon-number {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.facts {
+		margin: 30px 20px;
+	}
+	
+	#facts p {
+		text-align: center;
+	}
+
+	#packages {
+		flex-wrap: wrap;
+	}
+
+	.packages {
+		width: 100%;
+	}
+}
