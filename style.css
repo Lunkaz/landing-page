@@ -127,17 +127,13 @@ nav .title {
 
 /*----ABOUT----*/
 
-#slogan {
-	background: linear-gradient(rgba(15,15,15,.2),rgba(15,15,15,.3)), url('img/star.jpeg') fixed;
-	height: 40vh;
-	background-size: cover;
-	background-position: center;
+#about h2 {
 	text-align: center;
-	color: #FBFBFB;
+	margin-bottom: 
 }
 
-#slogan h2 {
-	padding-top: 18vh;
+#about p {
+	margin: 30px 0px 90px 0px;
 }
 
 /*----FACTS---*/
@@ -145,7 +141,7 @@ nav .title {
 #facts {
 	display: flex;
 	justify-content: space-between;
-	padding: 70px 50px;
+	padding: 0px 50px 70px 50px;
 }
 
 #facts h5 {
@@ -158,3 +154,23 @@ nav .title {
 	justify-content: space-around;
 	flex-direction: row-reverse;
 }
+
+/*----SLOGAN----*/
+
+#slogan {
+	background: linear-gradient(rgba(15,15,15,.2),rgba(15,15,15,.3)), url('img/star.jpeg') fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #FBFBFB;
+}
+
+#slogan h2 {
+	padding-top: 40vh;
+	font-size: 3rem;
+	line-height: 3.3rem;
+	margin-bottom: 20px;
+	letter-spacing: 6px;
+}
+
