@@ -42,6 +42,16 @@ h2 {
 	text-align: center;
 }
 
+hr {
+	border: 1px solid black;
+	width: 80px;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+a {
+	color: rgba(255, 255, 255, .7);
+}
 /*-----TYPO-----*/
 
 
@@ -49,6 +59,7 @@ h2 {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Marcellus SC', serif;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 p {
@@ -81,6 +92,13 @@ p {
   transform: translate(-50%, -50%);
 }
 
+#showcase .foot {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-5%, -50%);
+}
+
 #showcase h1 {
 	font-size: 5rem;
 	line-height: 4.4rem;
@@ -89,8 +107,8 @@ p {
 	letter-spacing: 10px;
 }
 
-#showcase hr {
-	border: .8px solid #FBFBFB;
+#showcase hr  {
+	border: 1px solid #FBFBFB;
 	width: 180px;
 	margin-top: 0;
 	margin-bottom: 0; 
@@ -146,6 +164,7 @@ nav .title {
 	justify-content: space-between;
 	padding: 0px 50px 70px 50px;
 	flex-direction: row-reverse;
+	flex-wrap: wrap;
 }
 
 #facts h5 {
@@ -156,15 +175,12 @@ nav .title {
 
 #facts .icon-number {
 	display: flex;
-	justify-content: space-around;
-	flex-direction: row-reverse;
+	align-items: center;
+	flex-direction: column;
 }
 
-#facts hr {
-	border: .8px solid black;
-	width: 80px;
+#facts p {
 	margin-top: 0;
-	margin-bottom: 0; 
 }
 
 /*----SLOGAN----*/
@@ -187,6 +203,10 @@ nav .title {
 	letter-spacing: 6px;
 }
 
+#slogan hr  {
+	border: 1px solid #FBFBFB;
+	width: 180px;
+}
 
 /*----PACKAGE----*/
 
@@ -195,6 +215,7 @@ nav .title {
 	justify-content: space-between;
 	flex-direction: row;
 	padding-top: 30px;
+	flex-wrap: wrap;
 }
 
 .packages {
@@ -205,16 +226,43 @@ nav .title {
 
 #packages h3, p {
 	text-align: center;
-
 }
 
+#packages h3 {
+	margin-bottom: 0;
+}
 
 /*----GUIES----*/
 
 #guies {
-	padding-top: 0;
+	padding: 0;
 }
 
+.guies {
+	text-align: center;
+}
+
+#guies img {
+	border-radius: 50%;
+	width: 150px;
+}
+
+#guies h4 {
+	margin: 15px 0px 0px 0px;
+}
+
+#guies p {
+	margin-top: 5px;
+	margin-bottom: 35px;
+}
+
+#guies .row1 {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	padding-top: 40px;
+	flex-wrap: wrap;
+}
 
 
 @media (max-width: 600px) { 
@@ -245,7 +293,6 @@ nav .title {
 	}
 
 	#facts {
-		flex-wrap: wrap;
 		justify-content: center;
 	}
 
@@ -262,11 +309,16 @@ nav .title {
 		text-align: center;
 	}
 
-	#packages {
-		flex-wrap: wrap;
+	.packages {
+		width: 100%;
 	}
 
-	.packages {
+	#guies .row1 {
+		justify-content: center;
+		margin: 0px 40px;
+	}
+
+	.guides {
 		width: 100%;
 	}
 }
