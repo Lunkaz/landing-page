@@ -86,17 +86,17 @@ p {
 }
 
 #showcase .child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
 
 #showcase .foot {
 	position: absolute;
-	top: 95%;
-	left: 50%;
-	transform: translate(-5%, -50%);
+	top: 94%;
+	left: 49%;
+	transform: translate(-6%, -50%);
 }
 
 #showcase h1 {
@@ -272,6 +272,13 @@ nav .title {
     padding: 25px 15px;
 	}
 
+	#showcase .foot {
+	position: absolute;
+	top: 85%;
+	left: 48%;
+	transform: translate(-15%, -52%);
+	}
+
 	#showcase h1 {
 	font-size: 3.5rem;
 	line-height: 3.3rem;
@@ -320,5 +327,13 @@ nav .title {
 
 	.guides {
 		width: 100%;
+	}
+}
+
+@media (max-width: 400px) { 
+
+	nav a {
+    display: inline-block;
+    padding: 25px 10px;
 	}
 }
