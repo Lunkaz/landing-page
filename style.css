@@ -234,35 +234,49 @@ nav .title {
 
 /*----GUIES----*/
 
-#guies {
+#guides {
 	padding: 0;
 }
 
-.guies {
+.guides {
 	text-align: center;
 }
 
-#guies img {
+#guides img {
 	border-radius: 50%;
 	width: 150px;
 }
 
-#guies h4 {
+#guides h4 {
 	margin: 15px 0px 0px 0px;
 }
 
-#guies p {
+#guides p {
 	margin-top: 5px;
 	margin-bottom: 35px;
 }
 
-#guies .row1 {
+#guides .row1 {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
 	padding-top: 40px;
 	flex-wrap: wrap;
 }
+
+:root {
+  --main-width: 66vw; 
+}
+
+#video{
+	text-align: center;	
+}
+
+.video > iframe {
+	width: var(--main-width);
+	height: calc(var(--main-width)/ 1.777);
+}
+
 
 
 @media (max-width: 600px) { 
@@ -328,6 +342,12 @@ nav .title {
 	.guides {
 		width: 100%;
 	}
+ 
+	:root {
+	   --main-width: 100vw; 
+	}
+
+
 }
 
 @media (max-width: 400px) { 
