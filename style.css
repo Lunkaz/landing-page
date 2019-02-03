@@ -52,7 +52,7 @@ a {
 
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .btn {
 	font-family: 'Marcellus SC', serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -67,7 +67,7 @@ p {
 
 /*-----HEADER----*/
 
-#showcase {
+#header {
 	background: linear-gradient(rgb(0,0,0, 0.2),rgba(0,0,0, 0.3)), url('img/beach.jpeg');
 	height: 100vh;
 	background-size: cover;
@@ -77,25 +77,25 @@ p {
 }
 
 
-#showcase {
+#header {
   position: relative;
 }
 
-#showcase .child {
+#header .child {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	}
 
-#showcase .foot {
+#header .foot {
 	position: absolute;
 	top: 94%;
 	left: 49%;
 	transform: translate(-6%, -50%);
 }
 
-#showcase h1 {
+#header h1 {
 	font-size: 5rem;
 	line-height: 4.4rem;
 	margin-bottom: 20px;
@@ -103,14 +103,14 @@ p {
 	letter-spacing: 10px;
 }
 
-#showcase hr  {
+#header hr  {
 	border: 1px solid #FBFBFB;
 	width: 180px;
 	margin-top: 0;
 	margin-bottom: 0; 
 }
 
-#showcase p {
+#header p {
 	margin-top: 8px;
 	font-size: 1.5rem;
 	letter-spacing: 5px;
@@ -264,6 +264,7 @@ nav a:hover::after {
 #guides p {
 	margin-top: 5px;
 	margin-bottom: 35px;
+	font-size: 1.1rem;
 }
 
 #guides .row1 {
@@ -280,7 +281,7 @@ nav a:hover::after {
   --main-width: 66vw; 
 }
 
-#video{
+#video-sec {
 	text-align: center;	
 }
 
@@ -289,13 +290,13 @@ nav a:hover::after {
 	height: calc(var(--main-width)/ 1.777);
 }
 
-#video hr  {
+#video-sec hr  {
 	border: 1px solid rgba(13, 151, 158, .8);
 	width: 180px;
 	margin: 100px auto;
 }
 
-#video hr:nth-child(1){
+#video-sec hr:nth-child(1){
 	margin-top: 50px;
 }
 
@@ -311,7 +312,7 @@ nav a:hover::after {
 }
 
 #contact form {
-	padding-top: 25vh;
+	padding-top: 18vh;
 }
 
 #email {
@@ -326,17 +327,27 @@ nav a:hover::after {
 	font-size: 1.2rem;
 }
 
-button {
+#submit {
 	background-color: rgba(15, 15, 15, .9);
 	border-style: none;
 	border-radius: 2px;
 	color: rgba(255, 255, 255, .7);
 	width: 100px;
 	margin-top: 10px;
+	padding: 15px;
 }
+
+.btn {
+	font-size: 16px;
+}
+
 
 #contact h3 {
 	margin: 10px;
+}
+
+#contact p {
+	font-size: 1.5rem;
 }
 
 /*----FOOTER-----*/
@@ -368,21 +379,21 @@ footer p {
     padding: 25px 15px;
 	}
 
-	#showcase .foot {
+	#header .foot {
 	position: absolute;
 	top: 85%;
 	left: 48%;
 	transform: translate(-15%, -52%);
 	}
 
-	#showcase h1 {
+	#header h1 {
 	font-size: 3.5rem;
 	line-height: 3.3rem;
 	margin-bottom: 8px;
 	letter-spacing: 8px;
 	}
 
-	#showcase p {
+	#header p {
 		font-size: 1.4rem;
 		letter-spacing: 5px;
 	}

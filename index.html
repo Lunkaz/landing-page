@@ -15,12 +15,12 @@
 
 <body>
 
-	<header id="showcase">
+	<header id="header">
 		
-		<nav>
-			<a href="#about">About</a>
-			<a class="title" href="#showcase">NZ Travel</a>
-			<a href="#contact">Contact</a>
+		<nav id="nav-bar">
+			<a href="#about" class="nav-link">About</a>
+			<img src="" id="header-img"><a class="title nav-link" href="#header">NZ Travel</a>
+			<a href="#contact" class="nav-link">Contact</a>
 		</nav>
 		
 		<div class="child">
@@ -29,7 +29,7 @@
 			<p>Because we all are travelers</p>
 		</div>
 
-		<div class="foot fa-2x">
+		<div  class="foot fa-2x">
 			<a href="#about"><i class="fas fa-angle-double-down"></i></a>
 		</div>
 
@@ -40,7 +40,7 @@
 		<h2>About NZ TRAVEL</h2>
 		<hr>
 
-		<p>Dare yourself enjoy the beauty of New Zealand. A place where the lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, diam dictum bibendum egestas, arcu libero placerat lorem, rutrum tempor justo urna nec magna. Mauris quis aliquam lorem, dignissim euismod risus. Nunc semper ligula tempor libero condimentum, a feugiat neque volutpat. Nunc ultrices lacus a congue vehicula. Ut tempus dui at lectus mollis, et volutpat diam elementum. Morbi ullamcorper lorem eget nunc tempor interdum. Etiam ornare, turpis quis hendrerit aliquam, dui nibh elementum tortor, a ullamcorper nibh velit vitae ex.</p>
+		<p>Dare to enjoy the beauty of New Zealand. A place where the lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, diam dictum bibendum egestas, arcu libero placerat lorem, rutrum tempor justo urna nec magna. Mauris quis aliquam lorem, dignissim euismod risus. Nunc semper ligula tempor libero condimentum, a feugiat neque volutpat. Nunc ultrices lacus a congue vehicula. Ut tempus dui at lectus mollis, et volutpat diam elementum. Morbi ullamcorper lorem eget nunc tempor interdum. Etiam ornare, turpis quis hendrerit aliquam, dui nibh elementum tortor, a ullamcorper nibh velit vitae ex.</p>
 		<h2>Our facts</h2>
 		<hr>
 	</section>
@@ -113,13 +113,13 @@
 		<div class="guides">
 		<img src="img/guide1.jpeg">
 			<h4>John Cocio</h4>
-			<p>Optio sit delectus autem commodi <br> aperiam.</p>
+			<p>Optio set extremezus autem commodi <br> aperiam.</p>
 		
 		</div>
 
 		<div class="guides">
 		<img src="img/guide1.jpeg">
-			<h4>Jorel Apataz</h4>
+			<h4>Dan Smith</h4>
 			<p> Et corporis blanditiis architecto <br>quam dolores voluptas dolore.</p>
 			
 		</div>
@@ -131,12 +131,12 @@
 	</section>
 
 
-	<section id="video">
+	<section id="video-sec">
 
 		<hr>
 
 		<div class="video">
-			<iframe src="https://www.youtube.com/embed/pzbqEG_chrs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>	
+			<iframe id="video" src="https://www.youtube.com/embed/pzbqEG_chrs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>	
 
 			</div>
 		<hr>
@@ -145,11 +145,12 @@
 
 	<section id="contact">
 		
-		<form>
-			
-			<input type="text" id="email" name="email" placeholder="E-mail" required>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+
+			<p>Dare to enjoy the beauty of New Zealand</p>
+			<input id="email" type="email" name="email" placeholder="E-mail" required >
 			<br>
-			<button><h3>Enjoy</h3></button>
+			<input id="submit" type="submit" value="Enjoy" class="btn"></input>
 
 		</form>
 
@@ -158,7 +159,7 @@
 	<footer>
 
 		<div class="foot fa-2x">
-			<a href="#showcase"><i class="fas fa-angle-double-up"></i></a>
+			<a href="#header"><i class="fas fa-angle-double-up"></i></a>
 		</div>
 
 		<p>2019 Lunkaz.</p>
