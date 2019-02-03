@@ -453,4 +453,9 @@ footer p {
     display: inline-block;
     padding: 25px 10px;
 	}
+
+	#contact form {
+		padding-top: 10vh;
+	}
+
 }
